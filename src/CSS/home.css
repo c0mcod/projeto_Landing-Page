@@ -1,0 +1,98 @@
+/* Configurações de estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #393E46;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+li {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    background-color: #393E46;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.hero {
+    background-color: #222831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    color: #EEEEEE;
+}
+
+.text {
+    flex: 1;
+    padding: 220px;
+
+    & h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    &span {
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+        color: black;
+    }
+}
+
+.cta {
+    background-color: #EEEEEE;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img-hero {
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse os limites */
+    height: auto;
+    /* Mantém as proporções da imagem */
+}
