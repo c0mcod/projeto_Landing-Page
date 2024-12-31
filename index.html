@@ -2,21 +2,18 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="/src/CSS/home.css">
+    <link rel="stylesheet" href="/src/CSS/home.css" />
     <!-- TAILWIND CSS/JS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
 
 <body>
-
     <!-- NAVBAR -->
     <header>
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -27,7 +24,7 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                             d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14" />
                     </svg>
-                    <span class="text-2xl font-semibold whitespace-nowrap dark:text-white mt-1">AntônioDev</span>
+                    <span class="text-2xl font-semibold whitespace-nowrap dark:text-white mt-5">AntônioDev</span>
                 </div>
                 <button id="menu-toggle" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -43,12 +40,12 @@
                     <ul
                         class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#"
+                            <a href="#hero"
                                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#highlights"
                                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Highlights</a>
                         </li>
                         <li>
@@ -69,19 +66,66 @@
         </nav>
     </header>
 
-
-
     <!-- HERO SECTION -->
     <section id="hero">
-        <div class="hero container">
+        <div class="hero">
             <div class="text">
                 <h1>Olá! Eu me chamo <span>Antônio Carlos!</span></h1>
-                <p><span class="kw">Desenvolvedor Web Full Stack | UX Designer | Desenvolvedor Backend</span></p>
+                <p>
+                    <span class="kw">Desenvolvedor Web Full Stack | UX
+                        Designer | Desenvolvedor
+                        Backend</span>
+                </p>
                 <a href="#" class="cta">Download CV</a>
             </div>
             <div class="img">
-                <img class="img-hero" src="./src/assets/undraw_website_27ju.svg" alt="">
+                <img class="img-hero" src="./src/assets/undraw_website_27ju.svg" alt />
             </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section id="highlights">
+        <div class="container-highlights">
+
+            <h1 class="title flex items-center text-5xl font-extrabold dark:text-white">HIGHLIGHTS</h1>
+
+            <div class="card">
+                <a href="#"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">UX/UI Designer</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">Criação de interfaces digitais intuitivas e funcionais, focando na experiência do usuário. Combinando princípios de design visual e usabilidade, transformo ideias em produtos que são agradáveis e fáceis de usar.</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Desenvolvimento Web | Front-End</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">Desenvolvimento de sites e aplicações responsivas, utilizando as melhores práticas de front-end e back-end. Tenho experiência com HTML, CSS, JavaScript, e frameworks modernos para entregar soluções eficientes e visualmente atraentes.</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Desenvolvimento Back-End</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">Criação de sistemas robustos e escaláveis com foco em performance, utilizando tecnologias como Node.js, Python e frameworks para APIs. Garantindo que a lógica do servidor seja sólida e eficiente.</p>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="#"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">E-commerce</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">Desenvolvimento de plataformas de e-commerce personalizadas, integrando gateways de pagamento, gerenciamento de inventário e sistemas de recomendação para criar experiências de compra online seguras e fluidas.</p>
+                </a>
+            </div>
+
         </div>
 
     </section>

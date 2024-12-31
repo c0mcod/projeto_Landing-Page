@@ -10,8 +10,12 @@ html {
 }
 
 body {
-    background-color: #EEEEEE;
+    background: linear-gradient(180deg, #222831 0%, rgba(30, 29, 79, 0.8) 100%) no-repeat;
     font-family: 'Poppins', sans-serif;
+}
+
+.title { 
+    padding: 20px;
 }
 
 /* 1° COMPONENTE: HERO */
@@ -23,7 +27,7 @@ body {
     align-items: center;
     padding: 20px;
     height: 100vh;
-    max-width: max-content;
+    max-width: max-content !important;
     color: #EEEEEE;
     flex-wrap: wrap;
 }
@@ -77,7 +81,7 @@ span.kw {
 }
 
 .img-hero {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
@@ -134,3 +138,32 @@ span.kw {
     }
 }
 /* 2° COMPONENTE: HIGHLIGHTS */
+.container-highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: linear-gradient(180deg, #222831 0%, rgba(30, 29, 79, 0.8) 100%) no-repeat;
+    color: #EEEEEE;
+    gap: 30px;  /* Ajuste o gap aqui para garantir que não fique muito grande */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .container-highlights {
+        gap: 20px; /* Reduz o espaçamento em telas menores */
+        padding: 15px; /* Ajusta o padding para telas pequenas */
+    }
+
+    .card {
+        max-width: 100%; /* Os cards ocupam toda a largura em telas pequenas */
+    }
+
+    h1 {
+        font-size: 3rem; /* Ajuste o tamanho do título */
+        text-align: center; /* Garante que o título fique centralizado */
+    }
+}
+
+
