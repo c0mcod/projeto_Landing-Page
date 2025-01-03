@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- SWIPER JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- DEVICON -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 </head>
 
@@ -152,93 +154,137 @@
         <!-- EXPERIÊNCIA -->
         <section id="experiencia">
             <div class="container-exp">
-                <h1 class="title text-center text-5xl font-extrabold dark:text-white">PROJETOS</h1>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
+                <h1 class="title text-center text-4xl font-bold mb-6 dark:text-white">PROJETOS</h1>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-                        <div class="card-project swiper-slide">
-                            <div
-                                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                <a href="#">
-                                    <img class="rounded-t-lg" src="./src/images/photo_2024-12-31_01-13-53.jpg" alt="" />
-                                </a>
-                                <div class="p-5">
-                                    <a href="#">
-                                        <h5
-                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projeto Acadêmico</h5>
-                                    </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Um projeto acadêmico de Desenvolvimento Web que simula a alocação de um veiculo. Foco em estilização, design, layout, responsividade e acessibilidade. Um projeto básico de estudos e desenvolvimento de habilidades e ferramentas.</p>
-                                    <a href="https://github.com/c0mcod/_projeto_RenovAuto" target="_blank"
-                                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                        Read more
-                                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                    <!-- Card do projeto -->
+                    <div
+                        class="card bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="https://github.com/c0mcod/_projeto_RenovAuto" target="_blank">
+                            <img src="src/images/photo_2024-12-31_01-13-53.jpg" alt="Projeto acadêmico 1"
+                                class="rounded-t-lg w-full h-48 object-cover">
+                        </a>
+                        <div class="p-4">
+                            <h5 class="text-xl font-semibold text-gray-900 dark:text-white">Projeto Acadêmico</h5>
+                            <p class="mt-2 text-sm text-gray-700 dark:text-gray-400">
+                                Projeto de Desenvolvimento Web que simula a alocação de veículos, focando em
+                                estilização, design e responsividade.
+                            </p>
+                            <a href="https://github.com/c0mcod/_projeto_RenovAuto" target="_blank"
+                                class="mt-4 inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">
+                                Saiba mais
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="card-project swiper-slide">
-                            <div
-                                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                <a href="#">
-                                    <img class="rounded-t-lg" src="./src/images/portifolio.jpg" alt="" />
-                                </a>
-                                <div class="p-5">
-                                    <a href="#">
-                                        <h5
-                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Portifólio Pessoal</h5>
-                                    </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Portifólio para uso pessoal e fins de estudo. Utilização de bibliotecas e frameworks CSS e JS, para descobrimento e aperfeiçoamento de novas ferramentas de desenvolvimento Web, com foco em responsividade, acessibilidade e design clean e elegante.</p>
-                                    <a href="https://github.com/c0mcod/projeto_Landing-Page" target="_blank"
-                                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                        Read more
-                                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                    <!-- CARD DO PORTIFOLIO -->
+                    <div
+                        class="card bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="https://github.com/c0mcod/projeto_Landing-Page" target="_blank">
+                            <img src="src/images/portifolio.jpg" alt="Projeto portifolio"
+                                class="rounded-t-lg w-full h-48 object-cover">
+                        </a>
+                        <div class="p-4">
+                            <h5 class="text-xl font-semibold text-gray-900 dark:text-white">Projeto Acadêmico</h5>
+                            <p class="mt-2 text-sm text-gray-700 dark:text-gray-400">
+                                Projeto de Desenvolvimento Web que simula a alocação de veículos, focando em
+                                estilização, design e responsividade.
+                            </p>
+                            <a href="https://github.com/c0mcod/projeto_Landing-Page" target="_blank"
+                                class="mt-4 inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">
+                                Saiba mais
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="card-project swiper-slide">
-                            <div
-                                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                <a href="#">
-                                    <img class="rounded-t-lg" src="./src/images/img not found.jpg" alt="" />
-                                </a>
-                                <div class="p-5">
-                                    <a href="#">
-                                        <h5
-                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Em desenvolvimento...</h5>
-                                    </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam praesentium blanditiis asperiores labore eveniet minus, architecto doloremque.</p>
-                                    <a href="#"
-                                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                        Read more
-                                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                    <div
+                        class="card bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img src="src/images/img not found.jpg" alt="Projeto acadêmico 1"
+                            class="rounded-t-lg w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h5 class="text-xl font-semibold text-gray-900 dark:text-white">Em desenvolvimento...</h5>
+                            <p class="mt-2 mb-6 text-sm text-gray-700 dark:text-gray-400">
+                                Projeto em progresso com detalhes a serem divulgados.
+                            </p>
+                            <button type="button"
+                                class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Em
+                                desenvolvimento...</button>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
+
             </div>
+
         </section>
 
+
         <!-- SKILLSET -->
+        <div id="skillset">
+            <h1 class="title text-center text-4xl font-bold mb-10 dark:text-white">SKILLSET</h1>
+            <div class="container-skillset p-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-9">
+                <!-- Card de Habilidade -->
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-html5-plain-wordmark text-5xl text-orange-600"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">HTML5</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-css3-plain-wordmark text-5xl text-blue-500"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">CSS3</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-javascript-plain text-5xl text-yellow-500"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">JavaScript</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-react-original-wordmark text-5xl text-cyan-500"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">React</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-nodejs-plain-wordmark text-5xl text-green-500"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">Node.js</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-python-plain-wordmark text-5xl text-blue-400"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">Python</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-mongodb-plain-wordmark text-5xl text-green-600"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">MongoDB</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-postgresql-plain-wordmark text-5xl text-blue-600"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">PostgreSQL</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-git-plain-wordmark text-5xl text-orange-500"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">Git</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-github-original-wordmark text-5xl text-black dark:text-gray-200"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">GitHub</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-figma-plain text-5xl text-purple-500"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">Figma</p>
+                </div>
+                <div
+                    class="icon flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition dark:bg-gray-800">
+                    <i class="devicon-visualstudio-plain text-5xl text-blue-500"></i>
+                    <p class="mt-2 text-sm font-medium text-gray-800 dark:text-gray-200">VS Code</p>
+                </div>
+            </div>
+        </div>
 
     </main>
 
