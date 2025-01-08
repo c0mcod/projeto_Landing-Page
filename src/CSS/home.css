@@ -20,6 +20,24 @@ main {
     animation: gradientAnimation 10s ease infinite;
 }
 
+i {
+    font-size: 1.8rem;
+}
+
+.logo{
+    font-family: "Teko", serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 0.9;
+    text-align: center;
+}
+
+.dev {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
 /* Animação do gradiente */
 @keyframes gradientAnimation {
     0% {
@@ -238,14 +256,13 @@ span.kw {
 
 /* 2° COMPONENTE: HIGHLIGHTS */
 .container-highlights {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-row: auto;
     padding: 20px;
     color: #EEEEEE;
     gap: 30px;
 }
+
 
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
@@ -300,4 +317,13 @@ span.kw {
 .tab-button.active {
     background-color: #1d4ed8;
     color: white;
+}
+
+/* 5° componente: contact us */
+.container-contact-us {
+    display: flex;
+}
+
+#contato {
+    display: flex;
 }

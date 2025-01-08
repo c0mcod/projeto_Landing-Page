@@ -16,6 +16,12 @@
     <!-- DEVICON -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,12 +30,8 @@
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div class="flex items-center space-x-2">
-                    <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                            d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14" />
-                    </svg>
-                    <span class="text-2xl font-semibold whitespace-nowrap dark:text-white mt-5">AntônioDev</span>
+                    <img src="./src/assets/a.svg" alt="log">
+                    <h1 class="logo">ANTÔNIO CARLOS<br><span class="dev">development</span></h1>
                 </div>
                 <button id="menu-toggle" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -72,89 +74,158 @@
     </header>
 
     <main>
+
         <!-- HERO SECTION -->
         <section id="hero">
-            <div class="hero">
-                <div class="text">
-                    <h1>Olá! Eu me chamo <span>Antônio Carlos!</span></h1>
-                    <p>
-                        <span class="kw">Desenvolvedor Web Full Stack | UX
-                            Designer | Desenvolvedor
-                            Backend</span>
-                    </p>
-                    <a href="#" class="cta">Download CV</a>
-                </div>
-                <div class="img">
-                    <img class="img-hero" src="./src/assets/undraw_website_27ju.svg" alt />
+            <div class="max-w-7xl mx-auto p-9">
+                <!-- Container principal com flex column em mobile e row em desktop -->
+                <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+                    <!-- Coluna de texto -->
+                    <div class="w-full md:w-1/2 text-center md:text-left space-y-6" data-aos="fade-up">
+                        <h1 class="th text-4xl md:text-6xl font-bold text-white">
+                            Olá! Eu me chamo
+                            <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                                Antônio Carlos!
+                            </span>
+                        </h1>
+
+                        <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                            <span
+                                class="px-3 py-1.5 text-sm font-medium rounded-lg bg-gray-800 text-blue-400 border border-blue-400/20">
+                                Desenvolvedor Full Stack
+                            </span>
+                            <span
+                                class="px-3 py-1.5 text-sm font-medium rounded-lg bg-gray-800 text-purple-400 border border-purple-400/20">
+                                UX Designer
+                            </span>
+                            <span
+                                class="px-3 py-1.5 text-sm font-medium rounded-lg bg-gray-800 text-green-400 border border-green-400/20">
+                                Backend Dev
+                            </span>
+                        </div>
+
+                        <div class="pt-4">
+                            <a download="" class="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium 
+                              transition-transform duration-200 hover:scale-105 hover:shadow-lg">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Coluna da imagem -->
+                    <div class="hidden md:block w-full md:w-1/2">
+                        <div class="relative w-full md:h-[500px]">
+                            <img src="./src/assets/undraw_developer-activity_dn7p.svg" alt="Hero Illustration"
+                                class="w-full h-full object-contain"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- HIGHLIGHTS -->
-        <section id="highlights">
-            <div class="container-highlights">
-
-                <h1 class="title flex items-center text-5xl font-extrabold dark:text-white">HIGHLIGHTS</h1>
-
-                <div class="card">
-                    <a href="#"
-                        class="block w-full max-w-sm min-h-[265px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">UX/UI Designer
-                        </h5>
-                        <p class="font-normal text-gray-700 dark:text-gray-400">Criação de interfaces digitais
-                            intuitivas e
-                            funcionais, focando na experiência do usuário. Combinando princípios de design visual e
-                            usabilidade, transformo ideias em produtos que são agradáveis e fáceis de usar.</p>
-                    </a>
+        <section id="Highlights" class="py-20">
+            <div class="max-w-7xl mx-auto px-4">
+                <!-- Título -->
+                <div class="text-center mb-16">
+                    <h1
+                        class="text-5xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-4">
+                        HIGHLIGHTS
+                    </h1>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
                 </div>
 
-                <div class="card">
-                    <a href="#"
-                        class="block w-full max-w-sm min-h-[265px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <!-- Grid de cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="group relative overflow-hidden rounded-xl bg-gray-800 p-8 transition-all duration-300 hover:scale-105 hover:bg-gray-700">
+                        <div
+                            class="absolute -right-8 -top-8 text-6xl opacity-10 group-hover:opacity-20 transition-all duration-300">
+                            🎨
+                        </div>
+                        <h5 class="text-2xl font-bold text-white mb-4">UX/UI Designer</h5>
+                        <p class="text-gray-300 leading-relaxed">
+                            Criação de interfaces digitais intuitivas e funcionais, focando na experiência do usuário.
+                            Combinando princípios de design visual e usabilidade, transformo ideias em produtos que são
+                            agradáveis e fáceis de usar.
+                        </p>
+                        <div
+                            class="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300">
+                        </div>
+                    </div>
 
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Desenvolvimento
-                            Web
-                            | Front-End</h5>
-                        <p class="font-normal text-gray-700 dark:text-gray-400">Desenvolvimento de sites e aplicações
-                            responsivas, utilizando as melhores práticas de front-end e back-end. Tenho experiência com
-                            HTML, CSS, JavaScript, e frameworks modernos para entregar soluções eficientes e visualmente
-                            atraentes.</p>
-                    </a>
+                    <!-- Card 2 -->
+                    <div
+                        class="group relative overflow-hidden rounded-xl bg-gray-800 p-8 transition-all duration-300 hover:scale-105 hover:bg-gray-700">
+                        <div
+                            class="absolute -right-8 -top-8 text-6xl opacity-10 group-hover:opacity-20 transition-all duration-300">
+                            💻
+                        </div>
+                        <h5 class="text-2xl font-bold text-white mb-4">Desenvolvimento Web | Front-End</h5>
+                        <p class="text-gray-300 leading-relaxed">
+                            Desenvolvimento de sites e aplicações responsivas, utilizando as melhores práticas de
+                            front-end e back-end.
+                            Tenho experiência com HTML, CSS, JavaScript, e frameworks modernos para entregar soluções
+                            eficientes e
+                            visualmente atraentes.
+                        </p>
+                        <div
+                            class="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="group relative overflow-hidden rounded-xl bg-gray-800 p-8 transition-all duration-300 hover:scale-105 hover:bg-gray-700">
+                        <div
+                            class="absolute -right-8 -top-8 text-6xl opacity-10 group-hover:opacity-20 transition-all duration-300">
+                            ⚙️
+                        </div>
+                        <h5 class="text-2xl font-bold text-white mb-4">Desenvolvimento Back-End</h5>
+                        <p class="text-gray-300 leading-relaxed">
+                            Criação de sistemas robustos e escaláveis com foco em performance, utilizando tecnologias
+                            como Node.js,
+                            Python e frameworks para APIs. Garantindo que a lógica do servidor seja sólida e eficiente.
+                        </p>
+                        <div
+                            class="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="group relative overflow-hidden rounded-xl bg-gray-800 p-8 transition-all duration-300 hover:scale-105 hover:bg-gray-700">
+                        <div
+                            class="absolute -right-8 -top-8 text-6xl opacity-10 group-hover:opacity-20 transition-all duration-300">
+                            🛍️
+                        </div>
+                        <h5 class="text-2xl font-bold text-white mb-4">E-commerce</h5>
+                        <p class="text-gray-300 leading-relaxed">
+                            Desenvolvimento de plataformas de e-commerce personalizadas, integrando gateways de
+                            pagamento,
+                            gerenciamento de inventário e sistemas de recomendação para criar experiências de compra
+                            online
+                            seguras e fluidas.
+                        </p>
+                        <div
+                            class="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300">
+                        </div>
+                    </div>
                 </div>
-
-                <div class="card">
-                    <a href="#"
-                        class="block w-full max-w-sm min-h-[265px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Desenvolvimento
-                            Back-End</h5>
-                        <p class="font-normal text-gray-700 dark:text-gray-400">Criação de sistemas robustos e
-                            escaláveis
-                            com foco em performance, utilizando tecnologias como Node.js, Python e frameworks para APIs.
-                            Garantindo que a lógica do servidor seja sólida e eficiente.</p>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="#"
-                        class="block w-full max-w-sm min-h-[265px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">E-commerce</h5>
-                        <p class="font-normal text-gray-700 dark:text-gray-400">Desenvolvimento de plataformas de
-                            e-commerce
-                            personalizadas, integrando gateways de pagamento, gerenciamento de inventário e sistemas de
-                            recomendação para criar experiências de compra online seguras e fluidas.</p>
-                    </a>
-                </div>
-
             </div>
         </section>
 
         <!-- EXPERIÊNCIA -->
         <section id="experiencia">
             <div class="container-exp">
-                <h1 class="title text-center text-4xl font-bold mb-6 dark:text-white">PROJETOS</h1>
+                <div class="text-center mb-16">
+                    <h1
+                        class="text-5xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-4">
+                        PROJETOS
+                    </h1>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
+                </div>
                 <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
                     <!-- Card do projeto -->
@@ -207,7 +278,7 @@
                                 Projeto em progresso com detalhes a serem divulgados.
                             </p>
                             <button type="button"
-                                class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Em
+                                class="cursor-progress py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Em
                                 desenvolvimento...</button>
                         </div>
                     </div>
@@ -220,7 +291,13 @@
 
         <!-- SKILLSET -->
         <div id="skillset">
-            <h1 class="title text-center text-4xl font-bold mb-10 dark:text-white">SKILLSET</h1>
+            <div class="text-center mb-16 mt-16">
+                <h1
+                    class="text-5xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-4">
+                    SKILLSET
+                </h1>
+                <div class="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
+            </div>
             <div class="container-skillset p-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-9">
                 <!-- Card de Habilidade -->
                 <div
@@ -285,6 +362,139 @@
                 </div>
             </div>
         </div>
+
+        <!-- CONTATO -->
+        <div class="text-center mb-16 mt-16">
+            <h1
+                class="text-5xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-4">
+                FALE COMIGO!
+            </h1>
+            <div class="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
+        <div class="max-w-6xl mx-auto px-3 p-9">
+            <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2 shadow-lg shadow-cyan-500/50">
+
+                    <!-- Coluna da esquerda -->
+                    <div class="p-12 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+                        <h1 class="text-4xl font-bold mb-6">Vamos conversar?</h1>
+                        <p class="text-xl text-blue-100 mb-8">
+                            Estou sempre aberto para discutir novos projetos, ideias criativas ou oportunidades de criar
+                            algo incrível juntos.
+                        </p>
+                        <div class="mt-12 space-y-4">
+                            <p class="flex ml-8 items-center text-blue-100">
+                                <img src="./src/assets/land-layer-location.svg" class="w-8 h-8 mr-2" alt="">
+                                Fortaleza, Brasil
+                            </p>
+                            <p class="flex items-center text-blue-100">
+                                <img src="./src/assets/envelopes.svg" class="m-8 h-8 mr-2" alt="">
+                                netosilvaneto6@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Coluna da direita -->
+                    <div class="p-12">
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="relative">
+                                    <input type="text" id="name"
+                                        class="w-full rounded-lg border border-gray-300 px-4 py-2.5 bg-white/50 dark:bg-gray-700/50 focus:border-blue-500"
+                                        placeholder="Nome" />
+                                </div>
+                                <div class="relative">
+                                    <input type="email" id="email"
+                                        class="w-full rounded-lg border border-gray-300 px-4 py-2.5 bg-white/50 dark:bg-gray-700/50 focus:border-blue-500"
+                                        placeholder="Email" />
+                                </div>
+                            </div>
+
+                            <input type="text" id="subject"
+                                class="w-full rounded-lg border border-gray-300 px-4 py-2.5 bg-white/50 dark:bg-gray-700/50 focus:border-blue-500"
+                                placeholder="Assunto" />
+
+                            <textarea rows="4" id="message"
+                                class="w-full rounded-lg border border-gray-300 px-4 py-2.5 bg-white/50 dark:bg-gray-700/50 focus:border-blue-500"
+                                placeholder="Sua mensagem"></textarea>
+
+                            <button type="submit"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 hover:shadow-lg">
+                                Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="bg-white dark:bg-gray-900">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <div class="flex items-center space-x-2">
+                            <img src="./src/assets/a.svg" alt="log">
+                            <h1 class="logo">ANTÔNIO CARLOS<br><span class="dev">development</span></h1>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us
+                            </h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="https://github.com/c0mcod" class="hover:underline">Github</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/antônio-carlos-da-silva-9533a9238"
+                                        class="hover:underline">Linkedin</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a
+                            href="https://github.com/c0mcod class=" hover:underline">Antônio Carlos™</a>. All Rights
+                        Reserved.</span>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/c0mcod"
+                            class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">GitHub account</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/antônio-carlos-da-silva-9533a9238"
+                            class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0H5C2.243 0 0 2.243 0 5v14c0 2.757 2.243 5 5 5h14c2.757 0 5-2.243 5-5V5c0-2.757-2.243-5-5-5zM8.339 19H5.002V9h3.337v10zM6.671 7.705c-1.066 0-1.936-.87-1.936-1.936s.87-1.936 1.936-1.936c1.067 0 1.937.87 1.937 1.936s-.87 1.936-1.937 1.936zM20 19h-3.338v-4.828c0-1.152-.021-2.633-1.604-2.633-1.605 0-1.851 1.252-1.851 2.548V19h-3.337V9h3.203v1.365h.045c.446-.845 1.537-1.735 3.161-1.735 3.384 0 4.009 2.228 4.009 5.123V19z" />
+                            </svg>
+                            <span class="sr-only">LinkedIn account</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </main>
 
